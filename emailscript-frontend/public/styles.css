@@ -1,3 +1,97 @@
+  .main-header.pro-navbar,
+  .main-footer {
+    width: 100vw !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    border-radius: 0 !important;
+    box-sizing: border-box;
+  }
+@media (max-width: 700px) {
+  .header-content,
+  .footer-content {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 4px 2vw 4px 2vw;
+    gap: 6px;
+  }
+  .main-header.pro-navbar,
+  .main-footer {
+    min-height: 0;
+    padding: 0;
+  }
+  .logo {
+    font-size: 1.1rem;
+    padding: 0;
+  }
+  .header-left, .header-right, .footer-left, .footer-right {
+    flex: unset;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .nav {
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .theme-toggle {
+    margin-left: 0;
+    margin-top: 6px;
+    width: 36px;
+    height: 36px;
+    align-self: flex-end;
+    font-size: 1.1rem;
+    padding: 0;
+  }
+  .container {
+    width: 100%;
+    min-width: 0;
+    padding: 12px 2vw 12px 2vw;
+    margin: 16px 0 0 0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px 0 rgba(60,40,120,0.07);
+    box-sizing: border-box;
+  }
+  .main-content {
+    padding: 8px 0 8px 0;
+  }
+  h2 {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  p {
+    font-size: 0.98rem;
+    margin-bottom: 10px;
+  }
+  input[type="email"] {
+    font-size: 0.98rem;
+    padding: 8px 8px;
+    margin-bottom: 12px;
+  }
+  button {
+    font-size: 0.98rem;
+    padding: 8px 12px;
+    min-width: 120px;
+    border-radius: 8px;
+  }
+  #messageOutput, #jsonOutput {
+    font-size: 0.95rem;
+    padding: 8px 6px;
+    border-radius: 8px;
+  }
+  .footer-links {
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+  }
+  .footer-content {
+    font-size: 0.92rem;
+    padding: 4px 2vw 4px 2vw;
+  }
+}
 /* === DARK MODE STYLES === */
 .dark,
 body.dark-mode {
@@ -234,12 +328,13 @@ body.dark-mode .main-header.pro-navbar {
     box-shadow: 0 8px 32px 0 rgba(60, 40, 120, 0.13), 0 1.5px 0 #a5b4fc inset;
     border: 1.5px solid rgba(180, 180, 255, 0.18);
     width: 100%;
-    max-width: 440px;
+    min-width: 0;
     text-align: center;
     color: #2d225a;
-    margin: 56px auto 0 auto;
-    padding: 36px 24px 28px 24px;
+    margin: 32px 0 0 0;
+    padding: 24px 2vw 20px 2vw;
     transition: box-shadow 0.3s, background 0.3s;
+    box-sizing: border-box;
   }
 }
 
