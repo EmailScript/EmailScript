@@ -2,12 +2,6 @@
 
 ## 📧 Email Validator App
 
-![GitHub repo size](https://img.shields.io/github/repo-size/your-username/email-validator)
-![GitHub contributors](https://img.shields.io/github/contributors/your-username/email-validator)
-![GitHub last commit](https://img.shields.io/github/last-commit/your-username/email-validator)
-![GitHub issues](https://img.shields.io/github/issues/your-username/email-validator)
-![MIT License](https://img.shields.io/badge/license-MIT-green)
-
 A beautifully styled, beginner-friendly email validator built with **HTML**, **CSS**, and **JavaScript**. Validates email input, shows real-time feedback, and displays structured JSON output.
 
 ---
